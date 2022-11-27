@@ -1,0 +1,28 @@
+/*
+ * File: C:\Cvs\GDi_Documentation\EMS_Core\FPRC_BMW\Model\HPCTL\Autocode\slprj\ert\_sharedutils\div_s16s32.h
+ *
+ *                   Delphi Powertrain Systems
+ *
+ *                   This document is the property of
+ *                   Delphi Powertrain Systems
+ *                   It must not be copied (in whole or in part)
+ *                   or disclosed without prior written consent
+ *                   of the company. Any copies by any method
+ *                   must also include a copy of this legend.
+ *
+ * Real-Time Workshop code generated for Simulink model fprcmhpctl.
+ *
+ * Model version                        : 1.853
+ * Real-Time Workshop file version      : 7.0  (R2007b)  02-Aug-2007
+ * Real-Time Workshop file generated on : Mon Jan 25 10:10:11 2010
+ * TLC version                          : 7.0 (Jul 26 2007)
+ * C source code generated on           : Mon Jan 25 10:10:13 2010
+ */
+
+#ifndef SHARE_div_s16s32
+#define SHARE_div_s16s32
+
+extern int16_T div_s16s32(int32_T numerator, int32_T denominator);
+
+#endif
+

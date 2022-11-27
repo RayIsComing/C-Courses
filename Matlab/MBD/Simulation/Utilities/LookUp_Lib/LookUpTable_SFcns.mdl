@@ -1,0 +1,2441 @@
+Model {
+  Name			  "LookUpTable_SFcns"
+  Version		  7.7
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.69"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Thu Jul 17 16:39:58 2014"
+  Creator		  "jzqwf2"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "jzqwf2"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Aug 07 12:33:31 2014"
+  RTWModifiedTimeStamp	  329315321
+  ModelVersionFormat	  "1.%<AutoIncrement:69>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    1
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "LookUpTable_SFcns"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "LookUpTable_SFcns"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      2
+      Version		      "1.11.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  3
+	  Version		  "1.11.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "1"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  ConcurrentTasks	  off
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  4
+	  Version		  "1.11.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  5
+	  Version		  "1.11.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  AccelParallelForEachSubsystem	on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  6
+	  Version		  "1.11.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  7
+	  Version		  "1.11.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  8
+	  Version		  "1.11.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  9
+	  Version		  "1.11.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  10
+	  Version		  "1.11.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  GenerateCodeMetricsReport off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      11
+	      Version		      "1.11.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      12
+	      Version		      "1.11.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      FunctionExecutionProfile off
+	      CodeExecutionProfiling  off
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 243, 69, 1123, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    2
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "LookUpTable_SFcns"
+    Location		    [2, 74, 1347, 690]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "124"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "124"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      "9"
+      Position		      [15, 136, 375, 164]
+      Value		      "[65 155 877 900 2000 2500 3000 3500 4000 4500 5000]"
+      OutDataTypeStr	      "fixdt(0,16,3)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      "10"
+      Position		      [225, 190, 255, 220]
+      Value		      "5500"
+      OutDataTypeStr	      "fixdt(0,16,3)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant10"
+      SID		      "66"
+      Position		      [210, 900, 295, 930]
+      Value		      "1.33"
+      OutDataTypeStr	      "fixdt(0,16,8)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant11"
+      SID		      "67"
+      Position		      [205, 940, 290, 970]
+      Value		      "3.33"
+      OutDataTypeStr	      "fixdt(0,16,8)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant12"
+      SID		      "76"
+      Position		      [215, 1405, 300, 1435]
+      Value		      "512"
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant13"
+      SID		      "77"
+      Position		      [215, 1445, 300, 1475]
+      Value		      "168"
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant14"
+      SID		      "78"
+      Position		      [15, 1364, 420, 1396]
+      Value		      "[-2000 -1800 -1500 -1000; -800 -200 0 250; 300 350 360 365; 370 450 1200 3100]"
+      OutDataTypeStr	      "fixdt(1,16,3)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant15"
+      SID		      "93"
+      Position		      [235, 1815, 320, 1845]
+      Value		      "0"
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant16"
+      SID		      "94"
+      Position		      [230, 1855, 315, 1885]
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant17"
+      SID		      "95"
+      Position		      [80, 1776, 440, 1804]
+      Value		      "[0 5 10;15 20 25;30 35 40;45 50 55;60 65 70]"
+      OutDataTypeStr	      "fixdt(0,16,6)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant18"
+      SID		      "110"
+      Position		      [215, 2225, 300, 2255]
+      Value		      "512"
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant19"
+      SID		      "111"
+      Position		      [215, 2265, 300, 2295]
+      Value		      "168"
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      SID		      "15"
+      Position		      [15, 331, 375, 359]
+      Value		      "[-10 -5 0 5 10 15 20 25 30 45]"
+      OutDataTypeStr	      "fixdt(1,16,7)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant20"
+      SID		      "112"
+      Position		      [15, 2184, 420, 2216]
+      Value		      "[-2000 -1800 -1500 -1000; -800 -200 0 250; 300 350 360 365; 370 450 1200 3100]"
+      OutDataTypeStr	      "fixdt(1,32,3)"
+      LockScale		      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      SID		      "16"
+      Position		      [225, 385, 310, 415]
+      Value		      "-62"
+      OutDataTypeStr	      "fixdt(1,16,7)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant4"
+      SID		      "31"
+      Position		      [25, 486, 385, 514]
+      Value		      "[0.25 0.4 0.9 1.0 1.999969482421875]"
+      OutDataTypeStr	      "fixdt(0,16,15)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant5"
+      SID		      "24"
+      Position		      [225, 540, 310, 570]
+      Value		      "4.25 * 256"
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant6"
+      SID		      "38"
+      Position		      [90, 666, 450, 694]
+      Value		      "[-200 -177 -67 37 157 187 197 207 254]"
+      OutDataTypeStr	      "fixdt(1,16,7)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant7"
+      SID		      "39"
+      Position		      [210, 720, 295, 750]
+      Value		      "3"
+      OutDataTypeStr	      "fixdt(0,16,8)"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant8"
+      SID		      "56"
+      Position		      [765, 405, 850, 435]
+      Value		      "65536"
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant9"
+      SID		      "65"
+      Position		      [55, 861, 415, 889]
+      Value		      "[0 5 10;15 20 25;30 35 40;45 50 55;60 65 70]"
+      OutDataTypeStr	      "fixdt(0,16,6)"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion1"
+      SID		      "36"
+      Position		      [780, 453, 855, 487]
+      OutDataTypeStr	      "uint16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion10"
+      SID		      "81"
+      Position		      [795, 1348, 870, 1382]
+      OutDataTypeStr	      "int16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion11"
+      SID		      "98"
+      Position		      [815, 1748, 890, 1782]
+      OutDataTypeStr	      "uint16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion2"
+      SID		      "40"
+      Position		      [785, 633, 860, 667]
+      OutDataTypeStr	      "int16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion3"
+      SID		      "58"
+      Position		      [335, 718, 410, 752]
+      OutDataTypeStr	      "uint16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion4"
+      SID		      "53"
+      Position		      [350, 538, 425, 572]
+      OutDataTypeStr	      "uint16"
+      LockScale		      on
+      ConvertRealWorld	      "Stored Integer (SI)"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion5"
+      SID		      "69"
+      Position		      [355, 898, 430, 932]
+      OutDataTypeStr	      "uint16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion6"
+      SID		      "70"
+      Position		      [355, 938, 430, 972]
+      OutDataTypeStr	      "uint16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion7"
+      SID		      "71"
+      Position		      [790, 843, 865, 877]
+      OutDataTypeStr	      "uint16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion8"
+      SID		      "113"
+      Position		      [795, 2168, 870, 2202]
+      OutDataTypeStr	      "int16"
+      ConvertRealWorld	      "Stored Integer (SI)"
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      SID		      "11"
+      Ports		      [1]
+      Position		      [820, 163, 960, 197]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      SID		      "17"
+      Ports		      [1]
+      Position		      [820, 358, 960, 392]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display10"
+      SID		      "73"
+      Ports		      [1]
+      Position		      [820, 983, 960, 1017]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display11"
+      SID		      "74"
+      Ports		      [1]
+      Position		      [820, 1028, 960, 1062]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display12"
+      SID		      "75"
+      Ports		      [1]
+      Position		      [610, 1087, 1090, 1223]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display13"
+      SID		      "82"
+      Ports		      [1]
+      Position		      [825, 1488, 965, 1522]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display14"
+      SID		      "83"
+      Ports		      [1]
+      Position		      [825, 1533, 965, 1567]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display15"
+      SID		      "84"
+      Ports		      [1]
+      Position		      [615, 1587, 1150, 1673]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display16"
+      SID		      "85"
+      Ports		      [1]
+      Position		      [835, 1403, 975, 1437]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display17"
+      SID		      "86"
+      Ports		      [1]
+      Position		      [945, 1348, 1085, 1382]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display18"
+      SID		      "99"
+      Ports		      [1]
+      Position		      [845, 1898, 985, 1932]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display19"
+      SID		      "100"
+      Ports		      [1]
+      Position		      [845, 1943, 985, 1977]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display2"
+      SID		      "25"
+      Ports		      [1]
+      Position		      [820, 513, 960, 547]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display20"
+      SID		      "101"
+      Ports		      [1]
+      Position		      [635, 2002, 1115, 2138]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display21"
+      SID		      "102"
+      Ports		      [1]
+      Position		      [855, 1813, 995, 1847]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display22"
+      SID		      "103"
+      Ports		      [1]
+      Position		      [965, 1748, 1105, 1782]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display23"
+      SID		      "114"
+      Ports		      [1]
+      Position		      [825, 2308, 965, 2342]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display24"
+      SID		      "115"
+      Ports		      [1]
+      Position		      [825, 2353, 965, 2387]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display25"
+      SID		      "116"
+      Ports		      [1]
+      Position		      [615, 2407, 1150, 2493]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display26"
+      SID		      "117"
+      Ports		      [1]
+      Position		      [835, 2223, 975, 2257]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display27"
+      SID		      "118"
+      Ports		      [1]
+      Position		      [945, 2168, 1085, 2202]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display3"
+      SID		      "37"
+      Ports		      [1]
+      Position		      [935, 453, 1075, 487]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display4"
+      SID		      "41"
+      Ports		      [1]
+      Position		      [825, 693, 965, 727]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display5"
+      SID		      "42"
+      Ports		      [1]
+      Position		      [940, 633, 1080, 667]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display6"
+      SID		      "52"
+      Ports		      [1]
+      Position		      [820, 783, 960, 817]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display7"
+      SID		      "57"
+      Ports		      [1]
+      Position		      [980, 413, 1120, 447]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display8"
+      SID		      "68"
+      Ports		      [1]
+      Position		      [830, 903, 970, 937]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display9"
+      SID		      "72"
+      Ports		      [1]
+      Position		      [940, 843, 1080, 877]
+      Format		      "long"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SFcn_SSLookup_indx"
+      SID		      "43"
+      Ports		      [2, 1]
+      Position		      [465, 650, 715, 765]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SFcn_SSLookup_indx"
+	Location		[2, 74, 1364, 707]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Map"
+	  SID			  "44"
+	  Position		  [25, 53, 55, 67]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index"
+	  SID			  "45"
+	  Position		  [25, 118, 55, 132]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "SFcn_SSLookup_indx"
+	  SID			  "46"
+	  Ports			  [2, 1]
+	  Position		  [255, 27, 580, 158]
+	  FunctionName		  "SFcn_SSLookup_indx"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "MapOut"
+	  SID			  "47"
+	  Position		  [735, 88, 765, 102]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "SFcn_SSLookup_indx"
+	  SrcPort		  1
+	  DstBlock		  "MapOut"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Index"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_SSLookup_indx"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Map"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_SSLookup_indx"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SFcn_SSLookup_indx_indx"
+      SID		      "87"
+      Ports		      [3, 1]
+      Position		      [485, 1367, 735, 1483]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SFcn_SSLookup_indx_indx"
+	Location		[2, 74, 1364, 707]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Map"
+	  SID			  "88"
+	  Position		  [25, 43, 55, 57]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index1"
+	  SID			  "89"
+	  Position		  [25, 88, 55, 102]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index2"
+	  SID			  "90"
+	  Position		  [25, 133, 55, 147]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "SFcn_SSLookup_indx_indx"
+	  SID			  "91"
+	  Ports			  [3, 1]
+	  Position		  [255, 29, 580, 161]
+	  FunctionName		  "SFcn_SSLookup_indx_indx"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "MapOut"
+	  SID			  "92"
+	  Position		  [735, 93, 765, 107]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Index2"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_SSLookup_indx_indx"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "SFcn_SSLookup_indx_indx"
+	  SrcPort		  1
+	  DstBlock		  "MapOut"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Index1"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_SSLookup_indx_indx"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Map"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_SSLookup_indx_indx"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SFcn_SlLookup_indx_indx"
+      SID		      "119"
+      Ports		      [3, 1]
+      Position		      [485, 2192, 735, 2308]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SFcn_SlLookup_indx_indx"
+	Location		[2, 74, 1364, 707]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Map"
+	  SID			  "120"
+	  Position		  [25, 43, 55, 57]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index1"
+	  SID			  "121"
+	  Position		  [25, 88, 55, 102]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index2"
+	  SID			  "122"
+	  Position		  [25, 133, 55, 147]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "SFcn_SlLookup_indx_indx"
+	  SID			  "123"
+	  Ports			  [3, 1]
+	  Position		  [255, 29, 580, 161]
+	  FunctionName		  "SFcn_SlLookup_indx_indx"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "MapOut"
+	  SID			  "124"
+	  Position		  [735, 93, 765, 107]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Map"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_SlLookup_indx_indx"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Index1"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_SlLookup_indx_indx"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "SFcn_SlLookup_indx_indx"
+	  SrcPort		  1
+	  DstBlock		  "MapOut"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Index2"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_SlLookup_indx_indx"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SFcn_USLookup_indx"
+      SID		      "26"
+      Ports		      [2, 1]
+      Position		      [460, 475, 710, 590]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SFcn_USLookup_indx"
+	Location		[167, 161, 957, 344]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Map"
+	  SID			  "27"
+	  Position		  [25, 53, 55, 67]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index"
+	  SID			  "28"
+	  Position		  [25, 118, 55, 132]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "SFcn_USLookup_indx"
+	  SID			  "29"
+	  Ports			  [2, 1]
+	  Position		  [255, 27, 580, 158]
+	  FunctionName		  "SFcn_USLookup_indx"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "MapOut"
+	  SID			  "30"
+	  Position		  [735, 88, 765, 102]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Map"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_USLookup_indx"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Index"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_USLookup_indx"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "SFcn_USLookup_indx"
+	  SrcPort		  1
+	  DstBlock		  "MapOut"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SFcn_USLookup_indx_indx"
+      SID		      "59"
+      Ports		      [3, 1]
+      Position		      [480, 862, 730, 978]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SFcn_USLookup_indx_indx"
+	Location		[2, 74, 1364, 707]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Map"
+	  SID			  "60"
+	  Position		  [25, 43, 55, 57]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index1"
+	  SID			  "61"
+	  Position		  [25, 88, 55, 102]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index2"
+	  SID			  "64"
+	  Position		  [25, 133, 55, 147]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "SFcn_USLookup_indx_indx"
+	  SID			  "62"
+	  Ports			  [3, 1]
+	  Position		  [255, 29, 580, 161]
+	  FunctionName		  "SFcn_USLookup_indx_indx"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "MapOut"
+	  SID			  "63"
+	  Position		  [735, 93, 765, 107]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Map"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_USLookup_indx_indx"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Index1"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_USLookup_indx_indx"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "SFcn_USLookup_indx_indx"
+	  SrcPort		  1
+	  DstBlock		  "MapOut"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Index2"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_USLookup_indx_indx"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SFcn_UlLookup_indx_indx"
+      SID		      "104"
+      Ports		      [3, 1]
+      Position		      [505, 1782, 755, 1898]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SFcn_UlLookup_indx_indx"
+	Location		[2, 74, 1364, 707]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Map"
+	  SID			  "105"
+	  Position		  [25, 43, 55, 57]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index1"
+	  SID			  "106"
+	  Position		  [25, 88, 55, 102]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Index2"
+	  SID			  "107"
+	  Position		  [25, 133, 55, 147]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "SFcn_UlLookup_indx_indx"
+	  SID			  "108"
+	  Ports			  [3, 1]
+	  Position		  [255, 29, 580, 161]
+	  FunctionName		  "SFcn_UlLookup_indx_indx"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "MapOut"
+	  SID			  "109"
+	  Position		  [735, 93, 765, 107]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Index2"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_UlLookup_indx_indx"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "SFcn_UlLookup_indx_indx"
+	  SrcPort		  1
+	  DstBlock		  "MapOut"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Index1"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_UlLookup_indx_indx"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Map"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_UlLookup_indx_indx"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SFcn_idx_Lookup_SS"
+      SID		      "18"
+      Ports		      [2, 1]
+      Position		      [460, 315, 710, 430]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SFcn_idx_Lookup_SS"
+	Location		[167, 161, 957, 344]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Map"
+	  SID			  "19"
+	  Position		  [25, 53, 55, 67]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ScaledVariable"
+	  SID			  "20"
+	  Position		  [25, 118, 55, 132]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "SFcn_idx_Lookup_SS"
+	  SID			  "21"
+	  Ports			  [2, 1]
+	  Position		  [255, 27, 580, 158]
+	  FunctionName		  "SFcn_idx_Lookup_SS"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "index"
+	  SID			  "22"
+	  Position		  [735, 88, 765, 102]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "SFcn_idx_Lookup_SS"
+	  SrcPort		  1
+	  DstBlock		  "index"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ScaledVariable"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_idx_Lookup_SS"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Map"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_idx_Lookup_SS"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "SFcn_idx_Lookup_US"
+      SID		      "5"
+      Ports		      [2, 1]
+      Position		      [460, 120, 710, 235]
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"SFcn_idx_Lookup_US"
+	Location		[167, 161, 957, 344]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Map"
+	  SID			  "6"
+	  Position		  [25, 53, 55, 67]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ScaledVariable"
+	  SID			  "8"
+	  Position		  [25, 118, 55, 132]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "SFcn_idx_Lookup_US"
+	  SID			  "1"
+	  Ports			  [2, 1]
+	  Position		  [255, 27, 580, 158]
+	  FunctionName		  "SFcn_idx_Lookup_US"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "index"
+	  SID			  "7"
+	  Position		  [735, 88, 765, 102]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Map"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_idx_Lookup_US"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ScaledVariable"
+	  SrcPort		  1
+	  DstBlock		  "SFcn_idx_Lookup_US"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "SFcn_idx_Lookup_US"
+	  SrcPort		  1
+	  DstBlock		  "index"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      SID		      "55"
+      Ports		      [2, 1]
+      Position		      [920, 411, 950, 449]
+      ShowName		      off
+      Inputs		      "+-"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "SFcn_idx_Lookup_US"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SFcn_idx_Lookup_US"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "SFcn_idx_Lookup_US"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "SFcn_idx_Lookup_SS"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SFcn_idx_Lookup_SS"
+      SrcPort		      1
+      DstBlock		      "Display1"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "SFcn_idx_Lookup_SS"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant4"
+      SrcPort		      1
+      Points		      [55, 0]
+      DstBlock		      "SFcn_USLookup_indx"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SFcn_USLookup_indx"
+      SrcPort		      1
+      Points		      [0, -5; 25, 0]
+      Branch {
+	DstBlock		"Display2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Data Type Conversion1"
+	DstPort			1
+      }
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Constant5"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion1"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	DstBlock		"Display3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Constant6"
+      SrcPort		      1
+      DstBlock		      "SFcn_SSLookup_indx"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SFcn_SSLookup_indx"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Data Type Conversion2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Display4"
+	DstPort			1
+      }
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Constant7"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion2"
+      SrcPort		      1
+      DstBlock		      "Display5"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Data Type Conversion4"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "SFcn_USLookup_indx"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant8"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "Display7"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Data Type Conversion3"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	DstBlock		"SFcn_SSLookup_indx"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 65]
+	DstBlock		"Display6"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant9"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[0, 280]
+	DstBlock		"Display12"
+	DstPort			1
+      }
+      Branch {
+	Points			[25, 0]
+	DstBlock		"SFcn_USLookup_indx_indx"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant10"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant11"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SFcn_USLookup_indx_indx"
+      SrcPort		      1
+      Points		      [0, -5; 25, 0]
+      Branch {
+	DstBlock		"Display8"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Data Type Conversion7"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion7"
+      SrcPort		      1
+      DstBlock		      "Display9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion6"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[0, 90]
+	DstBlock		"Display11"
+	DstPort			1
+      }
+      Branch {
+	Points			[20, 0]
+	DstBlock		"SFcn_USLookup_indx_indx"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion5"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	Points			[0, 85]
+	DstBlock		"Display10"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"SFcn_USLookup_indx_indx"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Constant14"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[0, 250]
+	DstBlock		"Display15"
+	DstPort			1
+      }
+      Branch {
+	Points			[25, 0]
+	DstBlock		"SFcn_SSLookup_indx_indx"
+	DstPort			1
+      }
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Constant12"
+      SrcPort		      1
+      Points		      [165, 0]
+      Branch {
+	Points			[0, 85]
+	DstBlock		"Display13"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"SFcn_SSLookup_indx_indx"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Constant13"
+      SrcPort		      1
+      Points		      [145, 0]
+      Branch {
+	Points			[0, 90]
+	DstBlock		"Display14"
+	DstPort			1
+      }
+      Branch {
+	Points			[20, 0]
+	DstBlock		"SFcn_SSLookup_indx_indx"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "SFcn_SSLookup_indx_indx"
+      SrcPort		      1
+      Points		      [0, -5; 25, 0]
+      Branch {
+	Points			[0, -55]
+	DstBlock		"Data Type Conversion10"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Display16"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion10"
+      SrcPort		      1
+      DstBlock		      "Display17"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant17"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[0, 280]
+	DstBlock		"Display20"
+	DstPort			1
+      }
+      Branch {
+	Points			[25, 0]
+	DstBlock		"SFcn_UlLookup_indx_indx"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant15"
+      SrcPort		      1
+      Points		      [165, 0]
+      Branch {
+	Points			[0, 85]
+	DstBlock		"Display18"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"SFcn_UlLookup_indx_indx"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Constant16"
+      SrcPort		      1
+      Points		      [150, 0]
+      Branch {
+	Points			[0, 90]
+	DstBlock		"Display19"
+	DstPort			1
+      }
+      Branch {
+	Points			[20, 0]
+	DstBlock		"SFcn_UlLookup_indx_indx"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "SFcn_UlLookup_indx_indx"
+      SrcPort		      1
+      Points		      [0, -10; 25, 0]
+      Branch {
+	Points			[0, -65]
+	DstBlock		"Data Type Conversion11"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Display21"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion11"
+      SrcPort		      1
+      DstBlock		      "Display22"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant20"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[0, 250]
+	DstBlock		"Display25"
+	DstPort			1
+      }
+      Branch {
+	Points			[25, 0]
+	DstBlock		"SFcn_SlLookup_indx_indx"
+	DstPort			1
+      }
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Constant18"
+      SrcPort		      1
+      Points		      [165, 0]
+      Branch {
+	Points			[0, 85]
+	DstBlock		"Display23"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"SFcn_SlLookup_indx_indx"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Constant19"
+      SrcPort		      1
+      Points		      [145, 0]
+      Branch {
+	Points			[0, 90]
+	DstBlock		"Display24"
+	DstPort			1
+      }
+      Branch {
+	Points			[20, 0]
+	DstBlock		"SFcn_SlLookup_indx_indx"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "SFcn_SlLookup_indx_indx"
+      SrcPort		      1
+      Points		      [0, -10; 25, 0]
+      Branch {
+	DstBlock		"Display26"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -55]
+	DstBlock		"Data Type Conversion8"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion8"
+      SrcPort		      1
+      DstBlock		      "Display27"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [410, 501]
+    }
+  }
+}

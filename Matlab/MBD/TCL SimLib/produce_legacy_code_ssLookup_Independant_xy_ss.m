@@ -1,0 +1,16 @@
+def = legacy_code ('initialize');
+def.SFunctionName = 'ssLookup_Independent_xy_ss';
+def.OutputFcnSpec = 'uint16 y1 = ssLookup_Independent_xy_ss(uint16 u1[1], uint16 u2)';
+def.HeaderFiles = {'mathlib.h'};
+def.SourceFiles = {'mathlib.c'};
+
+legacy_code('sfcn_cmex_generate',def);
+
+legacy_code('compile',def);
+
+legacy_code('slblock_generate',def);
+
+legacy_code('sfcn_tlc_generate',def);
+
+
+

@@ -1,0 +1,558 @@
+Library {
+  Name			  "Mathlib_Library"
+  Version		  6.6
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Jun 21 13:19:10 2007"
+  Creator		  "XZ3XS2"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "XZ3XS2"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Aug 27 17:42:21 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:18>"
+  ConfigurationManager	  "None"
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelVerboseBuild	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Mathlib_Library"
+    Location		    [470, 651, 1642, 1116]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      "S-Function"
+      Name		      "ApplyFILT_1stOrderLag_ssp"
+      Ports		      [3, 1]
+      Position		      [615, 99, 785, 131]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "ApplyFILT_1stOrderLag_ssp"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: int16 y1 = ApplyFILT_1stOrderLag_ssp(int16 u1, int16 u2, uin"
+"t16 u3)\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('%s','ApplyFILT_1stOrderLag_ssp');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "int16 y1 = ApplyFILT_1stOrderLag_ssp(int16 u1, "
+"int16 u2, uint16 u3)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "ApplyFILT_1stOrderLag_usp"
+      Ports		      [3, 1]
+      Position		      [615, 30, 785, 60]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "ApplyFILT_1stOrderLag_usp"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = ApplyFILT_1stOrderLag_usp(uint16 u1, uint16 u2, "
+"uint16 u3)\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('%s','ApplyFILT_1stOrderLag_usp');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = ApplyFILT_1stOrderLag_usp(uint16 u1"
+", uint16 u2, uint16 u3)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "ssLookup_Independent_xy_ss"
+      Ports		      [2, 1]
+      Position		      [45, 153, 250, 182]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "ssLookup_Independent_xy_ss"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = ssLookup_Independent_xy_ss(uint16 u1[1], uint16 "
+"u2)\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('ssLookup_Independent_xy_ss');\nport_la"
+"bel ('input',1,'map');\nport_label ('input',2,'in');\nport_label ('output',1,"
+"'idx');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = ssLookup_Independent_xy_ss(uint16 u"
+"1[1], uint16 u2)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "ssLookup_Independent_xy_us"
+      Ports		      [2, 1]
+      Position		      [55, 92, 250, 123]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "ssLookup_Independent_xy_us"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = ssLookup_Independent_xy_us(uint16 u1[1], uint16 "
+"u2)\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('ssLookup_Independent_xy_us');\nport_la"
+"bel ('input',1,'map');\nport_label ('input',2,'in');\nport_label ('output',1,"
+"'idx');\n"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = ssLookup_Independent_xy_us(uint16 u"
+"1[1], uint16 u2)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "ssLookup_xy_us"
+      Ports		      [2, 1]
+      Position		      [60, 327, 245, 358]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "ssLookup_xy_us"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: int16 y1 = ssLookup_xy_us(int16 u1[1], uint16 u2)\n\nTermina"
+"teFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('ssLookup_xy_us');\nport_label ('input'"
+",1,'map');\nport_label ('input',2,'idx');\nport_label ('output',1,'out');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "int16 y1 = ssLookup_xy_us(int16 u1[1], uint16 u"
+"2)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "ssLookup_xyz_us_us"
+      Ports		      [3, 1]
+      Position		      [60, 389, 240, 421]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "ssLookup_xyz_us_us"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = ssLookup_xyz_us_us(uint16 u1[1], uint16 u2, uint"
+"16 u3)\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('ssLookup_xyz_us_us');\nport_label ('in"
+"put',1,'map');\nport_label ('input',2,'idx_x');\nport_label ('input',3,'idx_y"
+"');\nport_label ('output',1,'out');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = ssLookup_xyz_us_us(uint16 u1[1], ui"
+"nt16 u2, uint16 u3)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "usLookup_Independent_xy_ss"
+      Ports		      [2, 1]
+      Position		      [315, 154, 520, 181]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "usLookup_Independent_xy_ss"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = usLookup_Independent_xy_ss(uint16 u1[1], uint16 "
+"u2)\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('%s','usLookup_Independent_xy_ss');\npo"
+"rt_label ('input',1,'map');\nport_label ('input',2,'in');\nport_label ('outpu"
+"t',1,'idx');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = usLookup_Independent_xy_ss(uint16 u"
+"1[1], uint16 u2)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "usLookup_Independent_xy_us"
+      Ports		      [2, 1]
+      Position		      [315, 96, 530, 129]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "usLookup_Independent_xy_us"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = usLookup_Independent_xy_us(uint16 u1[1], uint16 "
+"u2)\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('usLookup_Independent_xy_us');\nport_la"
+"bel ('input',1,'map');\nport_label ('input',2,'in');\nport_label ('output',1,"
+"'idx');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = usLookup_Independent_xy_us(uint16 u"
+"1[1], uint16 u2)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "usLookup_Rescale_xy_ss"
+      Ports		      [2, 1]
+      Position		      [60, 29, 245, 56]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "usLookup_Rescale_xy_ss"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = usLookup_Rescale_xy_ss(int16 u1[1], int16 u2)\n"
+"\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('usLookup_Rescale_xy_ss');\nport_label "
+"('input',1,'map');\nport_label ('input',2,'in');\nport_label ('output',1,'idx"
+"');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = usLookup_Rescale_xy_ss(int16 u1[1],"
+" int16 u2)|off"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "usLookup_Rescale_xy_us"
+      Ports		      [2, 1]
+      Position		      [315, 33, 500, 62]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "usLookup_Rescale_xy_us"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = usLookup_Rescale_xy_us(uint16 u1[1], uint16 u2)"
+"\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('%s','usLookup_Rescale_xy_us');\nport_l"
+"abel ('input',1,'map');\nport_label ('input',2,'in');\nport_label ('output',1"
+",'idx');\n"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = usLookup_Rescale_xy_us(uint16 u1[1]"
+", uint16 u2)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "usLookup_xy_us"
+      Ports		      [2, 1]
+      Position		      [305, 327, 490, 358]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "usLookup_xy_us"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = usLookup_xy_us(uint16 u1[1], uint16 u2)\n\nTermi"
+"nateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('usLookup_xy_us');\nport_label ('input'"
+",1,'map');\nport_label ('input',2,'idx');\nport_label ('output',1,'out');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = usLookup_xy_us(uint16 u1[1], uint16"
+" u2)|on"
+      MaskTabNameString	      ","
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "usLookup_xyz_us_us"
+      Ports		      [3, 1]
+      Position		      [305, 390, 490, 420]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      FunctionName	      "usLookup_xyz_us_us"
+      MaskType		      "Legacy Function"
+      MaskDescription	      "This block allows the user to call the followin"
+"g C function(s) in Simulink:\n\nInitializeConditionsFcn: none\n\nStartFcn: no"
+"ne\n\nOutputFcn: uint16 y1 = usLookup_xyz_us_us(uint16 u1[1], uint16 u2, uint"
+"16 u3)\n\nTerminateFcn: none"
+      MaskPromptString	      "SFunctionSpec|Display function specification"
+      MaskStyleString	      "edit,checkbox"
+      MaskTunableValueString  "off,on"
+      MaskCallbackString      "|if strcmp(get_param(gcbh, 'ShowSpec'), 'on')\n"
+"  set_param(gcbh, 'MaskDisplay', sprintf('fprintf(''%s'');', get_param(gcbh, "
+"'SFunctionSpec')));\nelse\n  set_param(gcbh, 'MaskDisplay', sprintf('fprintf("
+"''%s'');', get_param(gcbh, 'FunctionName')));\nend"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "off,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "SFunctionSpec=&1;ShowSpec=@2;"
+      MaskDisplay	      "fprintf('usLookup_xyz_us_us');\nport_label ('in"
+"put',1,'map');\nport_label ('input',2,'idx_x');\nport_label ('input',3,'idx_y"
+"');\nport_label ('output',1,'out');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "port"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "uint16 y1 = usLookup_xyz_us_us(uint16 u1[1], ui"
+"nt16 u2, uint16 u3)|on"
+      MaskTabNameString	      ","
+    }
+  }
+}
